@@ -232,6 +232,11 @@ html{
     position: relative;
 }
 
+.about-me button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 .about-me button .overlay{
     position: absolute;
     top: 0;
