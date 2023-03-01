@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Menu-->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">SGR</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#about-me" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i> 
+            </div>
+        </header>
+    </div>
+    <!--INICIO-->
+    <section class="inicio" id="inicio">
+        <div class="banner">
+            <div class="container-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Santiago Gonzalez Roisler</h1>
+            <h2>Desarrollador de Software - Administrativo Contable</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/santiago-gonzalez-roisler/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/gogoroisler"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--Sobre Mi-->
+    <section id="about-me" class="about-me">
+        <div class="section-am">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Santiago Gonzalez Roisler.</span> Trabajo en el área de finanzas y 
+                administración contable, buscando profundizar mi capacitación en el mundo IT.</p> 
+            <p> Participe y lidere equipos orientados a tareas de diseño, asesoría y toma de decisiones 
+                sobre las metodologías de comunicación institucional, reestructuración y mantenimiento de 
+                archivo interno, y en el diseño de estrategias pedagógicas.</p>
+            <p> Actualmente estoy estudiando una tecnicatura de Desarrollador de Software, 
+                complementandolo con un curso de React y otro de Java. Tambien realizando proyectos propios de 
+                programación FrontEnd y BackEnd para poner en practica lo aprendido y ampliar mi portfolio. </p>
+                <div class="file">
+                    <!--Datos-->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <Strong>Email</Strong>
+                                santiago.gonzalez.roisler@gmail.com
+                            </li>
+                            <li>
+                                <Strong>Website</Strong>
+                                www.ejemplo.com
+                            </li>
+                            <li>
+                                <Strong>Residencia</Strong>
+                                Buenos Aires, Argentina
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Intereses-->
+                    <div class="col">
+                        <div class="container-interest">
+                            <div class="interest">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>JUEGOS</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fa-solid fa-camera-retro"></i>
+                                <span>FOTOGRAFIA</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fa-solid fa-book"></i>
+                                <span>LITERATURA</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fa-solid fa-soccer-ball"></i>
+                                <span>DEPORTES</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fa-solid fa-headphones"></i>
+                                <span>MUSICA</span>
+                            </div>
+                            <div class="interest">
+                                <i class="fa-solid fa-film"></i>
+                                <span>CINE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    Descargar CV <i class="fa-solid fa-file-download"></i>
+                    <span class="overlay"></span>
+                </button>   
+        </div>
+    </section>
+    <!--SKILLS-->
+    <section class="skill" id="skills">
+        <div class="section-skills">
+            <h2>Skills</h2>
+            <div class="file">
+                <!--Tecnico-->
+                <div class="col">
+                    <h3>Hard Skills</h3>
+                    <div class="container-skills">
+                    <div class="skills">
+                        <i class="fa-brands fa-square-js"></i>
+                        <span>Javascript</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>Html</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-css3"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-node-js"></i>
+                        <span>Node JS</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-brands fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-solid fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                </div>
+                <!--Soft-->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="container-skills">
+                    <div class="skills">
+                        <i class="fa-regular fa-comments"></i>
+                        <span>Comunicación</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>Teamwork</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-solid fa-file-pen"></i>
+                        <span>Creatividad</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Proyect Management</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Liderazgo</span>
+                    </div>
+                    <div class="skills">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                        <span>Autodidacta</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CURRICULUM-->
+    <section class="curriculum" id="curriculum">
+        <div class="section-cv">
+            <h2>Curriculum</h2>
+            <div class="file">
+                <div class="col left">
+                    <h3>Educación</h3>
+                    <div class="item lfts">
+                        <h4>React JS</h4>
+                        <span class="house">Agencia de aprendizaje a lo largo de la vida / Codo a Codo 4.0</span>
+                        <span class="date">Febrero 2023 - Cursando</span>
+                        <p>Curso de React JS que complementa uno anterior, finalizado en 2022, de Fullstack 
+                            con Node JS. Cursando actualmente</p>
+                            <div class="conector">
+                                <div class="circle"></div>
+                            </div>
+                    </div>
+                    <div class="item lfts">
+                        <h4>Introducción a desarrollo Java</h4>
+                        <span class="house">UTN - Argentina Programa 4.0</span>
+                        <span class="date">Febrero 2023 - Cursando</span>
+                        <p>Curso de desarrollo en Java coordinado por la UTN. Cursando actualmente</p>
+                            <div class="conector">
+                                <div class="circle"></div>
+                            </div>
+                    </div>
+                    <div class="item lfts">
+                        <h4>Tecnicatura Superior en Desarrollo de Software</h4>
+                        <span class="house">Instituto de Formación Superior N°18</span>
+                        <span class="date">Agosto 2022 - Cursando</span>
+                        <p>Cursando actualmente</p>
+                            <div class="conector">
+                                <div class="circle"></div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col right">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item rgts">
+                        <h4>Administrativo Contable</h4>
+                        <span class="house">Autónomo</span>
+                        <span class="date">Mayo 2018 - Actualidad</span>
+                        <p>Área de finanzas y administración en un estudio 
+                            contable. Conciliaciones bancarias, gestión de 
+                            monotributistas, pagos y atención a proveedores, 
+                            elaboración de balances y confección de libros 
+                            contables.</p>
+                            <div class="conector1">
+                                <div class="circulo"></div>
+                            </div>
+                    </div>
+                    <div class="item rgts">
+                        <h4>Cajero - Vendedor</h4>
+                        <span class="house">SBS Libreria Internacional</span>
+                        <span class="date">Enero 2018 - Mayo 2018</span>
+                        <p>Atención al cliente en ferias ambulantes para 
+                            escuelas bilingües. Responsable de caja</p>
+                            <div class="conector1">
+                                <div class="circulo"></div>
+                            </div>
+                    </div>
+                    <div class="item rgts">
+                        <h4>Editor</h4>
+                        <span class="house">Freelance</span>
+                        <span class="date">2016 - 2018</span>
+                        <p>Edición de documentos y publicaciones. Diseño de 
+                            dossier y folletos. Mantenimiento y digitalización de 
+                            documentos. Manejo de presupuesto y planificación 
+                            de plan de trabajo. Corrección de estilo (incluyendo 
+                            gramática, sintaxis y ortografía) en textos a ser 
+                            publicados por la editorial, teniendo en cuenta lo 
+                            consignado en su manual de estilo</p>
+                            <div class="conector1">
+                                <div class="circulo"></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PORTFOLIO-->
+    <section class="portfolio" id="portfolio">
+        <div class="section-portfolio">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/pro2.PNG" alt="" href="https://github.com/gogoroisler">
+                    <div class="overlay">
+                        <h3>Web Conferencia</h3>
+                        <p>Trabajo Integrador de CaC 2022 con Html, CSS y Javascript</p>
+                        <button><a href="https://github.com/gogoroisler/Codo-a-Codo-TP-JavaScript">Ver repositorio</a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pro3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Figuras geometricas</h3>
+                        <p>Ejercicio con Html, CSS y Javascript de calculos con figuras geometricas</p>
+                        <button><a href="https://github.com/gogoroisler/FigurasGeometricas">Ver repositorio</a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pro1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Blog</h3>
+                        <p>Ejercicio con Html y CSS de blog con diferentes landing pages</p>
+                        <button><a href="https://github.com/gogoroisler/hobbynights">Ver repositorio</a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pro4.PNG" alt="">
+                    <div class="overlay">
+                        <h3>App Clima</h3>
+                        <p>Aplicacion de clima con API de Open Weather</p>
+                        <button><a href="https://github.com/gogoroisler/Clima">Ver repositorio</a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pro5.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora</h3>
+                        <p>Calculadora con funciones creadas con Javascript</p>
+                        <button><a href="https://github.com/gogoroisler/Calculadora">Ver repositorio</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACTO-->
+    <section class="contacto" id="contacto">
+        <div class="section-contact">
+            <h2>Contacto</h2>
+            <div class="col">
+                <form action="https://formsubmit.co/santiago.gonzalez.roisler@gmail.com" method="POST">
+                <input type="text" id="name" placeholder="Nombre" required>
+                <input type="text" id="phone" placeholder="Telefono" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <input type="text" id="subject" placeholder="Tema" required>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar mensaje
+                    <id class="fa-solid fa-message"></id>
+                    <span class="overlay"></span>
+                </button>
+            </form>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+    <a href="#inicio" class="up">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/santiago-gonzalez-roisler/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/gogoroisler"><i class="fa-brands fa-github"></i></a>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
