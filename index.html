@@ -16,6 +16,7 @@
 <body>
     <!--Menu-->
     <div class="container-header">
+        <div id="progress-bar"></div>
         <header>
             <div class="logo">
                 <a href="#">SGR</a>
@@ -291,9 +292,16 @@
     <section class="portfolio" id="portfolio">
         <div class="section-portfolio">
             <h2>Portfolio</h2>
+            <div class="filtros">
+                <button class="filtro active" data-filter="all">Todos</button>
+                <button class="filtro" data-filter="python">Python</button>
+                <button class="filtro" data-filter="django">Django</button>
+                <button class="filtro" data-filter="javascript">JavaScript</button>
+                <button class="filtro" data-filter="nodejs">Node.js</button>
+            </div>
             <div class="galeria">
-                <div class="proyecto fade-in">
-                    <img src="img/consorcios.png" alt="Sistema de Gestión de Consorcios">
+                <div class="proyecto fade-in" data-tech="python django">
+                    <img src="img/consorcios.png" alt="Sistema de Gestión de Consorcios" loading="lazy">
                     <div class="proyecto-info">
                         <h3>Gestión de Consorcios</h3>
                         <p>Sistema web para la gestión integral de consorcios: departamentos, expensas, reclamos y avisos, con roles diferenciados para administradores y consorcistas.</p>
@@ -306,8 +314,8 @@
                         <button><a href="https://github.com/gogoroisler/TP-FINAL-BACKEND--IFTS18" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
                     </div>
                 </div>
-                <div class="proyecto fade-in">
-                    <img src="img/obras.png" alt="Sistema de Gestión de Obras Públicas">
+                <div class="proyecto fade-in" data-tech="python">
+                    <img src="img/obras.png" alt="Sistema de Gestión de Obras Públicas" loading="lazy">
                     <div class="proyecto-info">
                         <h3>Obras Públicas CABA</h3>
                         <p>Software en Python para gestionar obras urbanas de Buenos Aires usando un dataset público del gobierno de la ciudad, con POO y persistencia ORM.</p>
@@ -320,8 +328,8 @@
                         <button><a href="https://github.com/gogoroisler/TP-POO-Navarro-Feige-GonzalezRoisler" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
                     </div>
                 </div>
-                <div class="proyecto fade-in">
-                    <img src="img/series.png" alt="App de Gestión de Series TV">
+                <div class="proyecto fade-in" data-tech="javascript nodejs">
+                    <img src="img/series.png" alt="App de Gestión de Series TV" loading="lazy">
                     <div class="proyecto-info">
                         <h3>Gestión de Series TV</h3>
                         <p>Aplicación web fullstack para gestionar registros de series de televisión con operaciones CRUD completas a través de una API REST.</p>
@@ -335,8 +343,8 @@
                         <button><a href="https://github.com/gogoroisler/CRUD-PPI-II" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
                     </div>
                 </div>
-                <div class="proyecto fade-in">
-                    <img src="img/pro4.PNG" alt="App Clima">
+                <div class="proyecto fade-in" data-tech="javascript">
+                    <img src="img/pro4.PNG" alt="App Clima" loading="lazy">
                     <div class="proyecto-info">
                         <h3>App Clima</h3>
                         <p>Aplicación de clima en tiempo real que consume la API de OpenWeather para mostrar condiciones meteorológicas por ciudad.</p>
@@ -347,8 +355,8 @@
                         <button><a href="https://github.com/gogoroisler/Clima" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
                     </div>
                 </div>
-                <div class="proyecto fade-in">
-                    <img src="img/pro2.PNG" alt="Web Conferencia">
+                <div class="proyecto fade-in" data-tech="javascript">
+                    <img src="img/pro2.PNG" alt="Web Conferencia" loading="lazy">
                     <div class="proyecto-info">
                         <h3>Web Conferencia</h3>
                         <p>Trabajo integrador del curso Fullstack de Codo a Codo 2022. Sitio web completo con múltiples secciones y funcionalidades en JavaScript.</p>

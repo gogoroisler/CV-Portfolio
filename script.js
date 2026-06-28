@@ -23,10 +23,14 @@ const spyObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => spyObserver.observe(s));
 
-// Sombra en el header al hacer scroll
+// Sombra en el header y barra de progreso al hacer scroll
 const header = document.querySelector('.container-header');
+const progressBar = document.getElementById('progress-bar');
 window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 10);
+    const scrollTop = window.scrollY;
+    header.classList.toggle('scrolled', scrollTop > 10);
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    progressBar.style.width = (scrollTop / docHeight) * 100 + '%';
 });
 
 // Typewriter hero
@@ -60,6 +64,29 @@ function type() {
 }
 
 type();
+
+// Filtro de proyectos por tecnología
+const filtros = document.querySelectorAll('.filtro');
+const proyectos = document.querySelectorAll('.proyecto');
+
+filtros.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filtros.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+        proyectos.forEach(proyecto => {
+            const match = filter === 'all' || proyecto.dataset.tech.includes(filter);
+            if (match) {
+                proyecto.style.display = '';
+                setTimeout(() => proyecto.style.opacity = '1', 10);
+            } else {
+                proyecto.style.opacity = '0';
+                setTimeout(() => proyecto.style.display = 'none', 300);
+            }
+        });
+    });
+});
 
 let menuVisible = false;
 // funcion menu

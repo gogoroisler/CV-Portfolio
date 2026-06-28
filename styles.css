@@ -12,6 +12,19 @@ html{
     scroll-behavior: smooth;
 }
 
+/* PROGRESS BAR */
+
+#progress-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #1CB698;
+    z-index: 100;
+    transition: width .1s linear;
+}
+
 /* MENU */
 
 .container-header{
@@ -566,11 +579,48 @@ html{
     margin: auto;
 }
 
+.filtros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filtro{
+    background: transparent;
+    border: 2px solid #3a4146;
+    color: whitesmoke;
+    padding: 8px 22px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Work Sans';
+    border-radius: 25px;
+    transition: all .3s;
+    letter-spacing: .5px;
+}
+
+.filtro:hover{
+    border-color: #1CB698;
+    color: #1CB698;
+}
+
+.filtro.active{
+    background-color: #1CB698;
+    border-color: #1CB698;
+    color: #1e2326;
+    font-weight: 600;
+}
+
 .portfolio .galeria{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+}
+
+.proyecto{
+    transition: opacity .3s ease;
 }
 
 .portfolio .galeria .proyecto{
@@ -807,26 +857,27 @@ footer .up{
 
 @media screen and (max-width:980px) {
     nav{
-        display: none;
-    }
-    .nav-responsive{
-        display: block;
-    }
-    nav.responsive{
-        display: block;
         position: absolute;
         right: 0;
         top: 75px;
         background-color: #252A2E;
         width: 180px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .35s ease;
     }
-    nav.responsive ul{
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        max-height: 400px;
+    }
+    nav ul{
         display: block !important;
     }
-    nav.responsive ul li{
-        border-bottom: 1px solid whitesmoke;
+    nav ul li{
+        border-bottom: 1px solid #3a4146;
         padding: 10px;
-
     }
 }
     
