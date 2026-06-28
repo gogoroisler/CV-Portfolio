@@ -75,16 +75,23 @@ filtros.forEach(btn => {
         btn.classList.add('active');
 
         const filter = btn.dataset.filter;
-        proyectos.forEach(proyecto => {
-            const match = filter === 'all' || proyecto.dataset.tech.includes(filter);
-            if (match) {
-                proyecto.style.display = '';
-                setTimeout(() => proyecto.style.opacity = '1', 10);
-            } else {
-                proyecto.style.opacity = '0';
-                setTimeout(() => proyecto.style.display = 'none', 300);
-            }
-        });
+
+        // 1. Fade out todos
+        proyectos.forEach(p => p.style.opacity = '0');
+
+        setTimeout(() => {
+            // 2. Mostrar / ocultar según filtro
+            proyectos.forEach(proyecto => {
+                const match = filter === 'all' || proyecto.dataset.tech.includes(filter);
+                proyecto.style.display = match ? '' : 'none';
+            });
+            // 3. Fade in los que quedan
+            setTimeout(() => {
+                proyectos.forEach(p => {
+                    if (p.style.display !== 'none') p.style.opacity = '1';
+                });
+            }, 50);
+        }, 300);
     });
 });
 

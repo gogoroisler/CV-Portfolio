@@ -11,6 +11,7 @@
     <meta property="og:description" content="Portfolio personal con proyectos de FrontEnd y BackEnd, skills y curriculum.">
     <meta property="og:type" content="website">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -244,7 +245,11 @@
                             <span>Fundación Telefónica Movistar</span>
                         </li>
                         <li>
-                            <strong>Ciberseguridad</strong>
+                            <strong>Introducción a Ciberseguridad</strong>
+                            <span>Fundación Telefónica Movistar</span>
+                        </li>
+                        <li>
+                            <strong>Ciberseguridad en el Entorno Educativo</strong>
                             <span>Fundación Telefónica Movistar</span>
                         </li>
                         <li>
@@ -300,72 +305,121 @@
                 <button class="filtro" data-filter="nodejs">Node.js</button>
             </div>
             <div class="galeria">
+                <!-- Card: Gestión de Consorcios -->
                 <div class="proyecto fade-in" data-tech="python django">
-                    <img src="img/consorcios.png" alt="Sistema de Gestión de Consorcios" loading="lazy">
-                    <div class="proyecto-info">
-                        <h3>Gestión de Consorcios</h3>
-                        <p>Sistema web para la gestión integral de consorcios: departamentos, expensas, reclamos y avisos, con roles diferenciados para administradores y consorcistas.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">Tailwind</span>
-                            <span class="tech-tag">SQLite</span>
+                    <div class="group overflow-hidden rounded-xl border border-gray-700/50 bg-[#1a2025] hover:border-teal-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-teal-500/10">
+                        <div class="overflow-hidden">
+                            <img src="img/consorcios.png" alt="Sistema de Gestión de Consorcios" loading="lazy"
+                                 class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105">
                         </div>
-                        <button><a href="https://github.com/gogoroisler/TP-FINAL-BACKEND--IFTS18" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
+                        <div class="p-5 text-center">
+                            <h3 class="text-base font-semibold tracking-wide mb-2" style="color:#1CB698">Gestión de Consorcios</h3>
+                            <p class="text-sm leading-relaxed mb-4" style="color:#aaa">Sistema web para la gestión integral de consorcios: departamentos, expensas, reclamos y avisos, con roles diferenciados para administradores y consorcistas.</p>
+                            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">Python</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">Django</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">Tailwind</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">SQLite</span>
+                            </div>
+                            <a href="https://github.com/gogoroisler/TP-FINAL-BACKEND--IFTS18" target="_blank" rel="noopener noreferrer"
+                               class="inline-block border border-white/30 text-white text-sm px-5 py-2 rounded transition-all duration-300 hover:bg-[#1CB698] hover:border-[#1CB698]">
+                                Ver repositorio
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Card: Obras Públicas CABA -->
                 <div class="proyecto fade-in" data-tech="python">
-                    <img src="img/obras.png" alt="Sistema de Gestión de Obras Públicas" loading="lazy">
-                    <div class="proyecto-info">
-                        <h3>Obras Públicas CABA</h3>
-                        <p>Software en Python para gestionar obras urbanas de Buenos Aires usando un dataset público del gobierno de la ciudad, con POO y persistencia ORM.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">POO</span>
-                            <span class="tech-tag">Peewee ORM</span>
-                            <span class="tech-tag">SQLite</span>
+                    <div class="group overflow-hidden rounded-xl border border-gray-700/50 bg-[#1a2025] hover:border-teal-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-teal-500/10">
+                        <div class="overflow-hidden">
+                            <img src="img/obras.png" alt="Sistema de Gestión de Obras Públicas" loading="lazy"
+                                 class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105">
                         </div>
-                        <button><a href="https://github.com/gogoroisler/TP-POO-Navarro-Feige-GonzalezRoisler" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
+                        <div class="p-5 text-center">
+                            <h3 class="text-base font-semibold tracking-wide mb-2" style="color:#1CB698">Obras Públicas CABA</h3>
+                            <p class="text-sm leading-relaxed mb-4" style="color:#aaa">Software en Python para gestionar obras urbanas de Buenos Aires usando un dataset público del gobierno de la ciudad, con POO y persistencia ORM.</p>
+                            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">Python</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">POO</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">Peewee ORM</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">SQLite</span>
+                            </div>
+                            <a href="https://github.com/gogoroisler/TP-POO-Navarro-Feige-GonzalezRoisler" target="_blank" rel="noopener noreferrer"
+                               class="inline-block border border-white/30 text-white text-sm px-5 py-2 rounded transition-all duration-300 hover:bg-[#1CB698] hover:border-[#1CB698]">
+                                Ver repositorio
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Card: Gestión de Series TV -->
                 <div class="proyecto fade-in" data-tech="javascript nodejs">
-                    <img src="img/series.png" alt="App de Gestión de Series TV" loading="lazy">
-                    <div class="proyecto-info">
-                        <h3>Gestión de Series TV</h3>
-                        <p>Aplicación web fullstack para gestionar registros de series de televisión con operaciones CRUD completas a través de una API REST.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JS</span>
+                    <div class="group overflow-hidden rounded-xl border border-gray-700/50 bg-[#1a2025] hover:border-teal-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-teal-500/10">
+                        <div class="overflow-hidden">
+                            <img src="img/series.png" alt="App de Gestión de Series TV" loading="lazy"
+                                 class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105">
                         </div>
-                        <button><a href="https://github.com/gogoroisler/CRUD-PPI-II" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
+                        <div class="p-5 text-center">
+                            <h3 class="text-base font-semibold tracking-wide mb-2" style="color:#1CB698">Gestión de Series TV</h3>
+                            <p class="text-sm leading-relaxed mb-4" style="color:#aaa">Aplicación web fullstack para gestionar registros de series de televisión con operaciones CRUD completas a través de una API REST.</p>
+                            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">Node.js</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">Express</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">HTML</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">CSS</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">JS</span>
+                            </div>
+                            <a href="https://github.com/gogoroisler/CRUD-PPI-II" target="_blank" rel="noopener noreferrer"
+                               class="inline-block border border-white/30 text-white text-sm px-5 py-2 rounded transition-all duration-300 hover:bg-[#1CB698] hover:border-[#1CB698]">
+                                Ver repositorio
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Card: App Clima -->
                 <div class="proyecto fade-in" data-tech="javascript">
-                    <img src="img/pro4.PNG" alt="App Clima" loading="lazy">
-                    <div class="proyecto-info">
-                        <h3>App Clima</h3>
-                        <p>Aplicación de clima en tiempo real que consume la API de OpenWeather para mostrar condiciones meteorológicas por ciudad.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">OpenWeather API</span>
+                    <div class="group overflow-hidden rounded-xl border border-gray-700/50 bg-[#1a2025] hover:border-teal-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-teal-500/10">
+                        <div class="overflow-hidden">
+                            <img src="img/pro4.PNG" alt="App Clima" loading="lazy"
+                                 class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105">
                         </div>
-                        <button><a href="https://github.com/gogoroisler/Clima" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
+                        <div class="p-5 text-center">
+                            <h3 class="text-base font-semibold tracking-wide mb-2" style="color:#1CB698">App Clima</h3>
+                            <p class="text-sm leading-relaxed mb-4" style="color:#aaa">Aplicación de clima en tiempo real que consume la API de OpenWeather para mostrar condiciones meteorológicas por ciudad.</p>
+                            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">JavaScript</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">OpenWeather API</span>
+                            </div>
+                            <a href="https://github.com/gogoroisler/Clima" target="_blank" rel="noopener noreferrer"
+                               class="inline-block border border-white/30 text-white text-sm px-5 py-2 rounded transition-all duration-300 hover:bg-[#1CB698] hover:border-[#1CB698]">
+                                Ver repositorio
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Card: Web Conferencia -->
                 <div class="proyecto fade-in" data-tech="javascript">
-                    <img src="img/pro2.PNG" alt="Web Conferencia" loading="lazy">
-                    <div class="proyecto-info">
-                        <h3>Web Conferencia</h3>
-                        <p>Trabajo integrador del curso Fullstack de Codo a Codo 2022. Sitio web completo con múltiples secciones y funcionalidades en JavaScript.</p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
+                    <div class="group overflow-hidden rounded-xl border border-gray-700/50 bg-[#1a2025] hover:border-teal-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-teal-500/10">
+                        <div class="overflow-hidden">
+                            <img src="img/pro2.PNG" alt="Web Conferencia" loading="lazy"
+                                 class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105">
                         </div>
-                        <button><a href="https://github.com/gogoroisler/Codo-a-Codo-TP-JavaScript" target="_blank" rel="noopener noreferrer">Ver repositorio</a></button>
+                        <div class="p-5 text-center">
+                            <h3 class="text-base font-semibold tracking-wide mb-2" style="color:#1CB698">Web Conferencia</h3>
+                            <p class="text-sm leading-relaxed mb-4" style="color:#aaa">Trabajo integrador del curso Fullstack de Codo a Codo 2022. Sitio web completo con múltiples secciones y funcionalidades en JavaScript.</p>
+                            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">HTML</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">CSS</span>
+                                <span class="text-xs font-medium px-3 py-1 rounded-full border" style="background:rgba(28,182,152,.1);color:#1CB698;border-color:rgba(28,182,152,.35)">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/gogoroisler/Codo-a-Codo-TP-JavaScript" target="_blank" rel="noopener noreferrer"
+                               class="inline-block border border-white/30 text-white text-sm px-5 py-2 rounded transition-all duration-300 hover:bg-[#1CB698] hover:border-[#1CB698]">
+                                Ver repositorio
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

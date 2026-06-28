@@ -620,91 +620,9 @@ html{
 }
 
 .proyecto{
-    transition: opacity .3s ease;
-}
-
-.portfolio .galeria .proyecto{
     max-width: 340px;
     margin: 10px;
-    background-color: #1e2326;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform .3s, box-shadow .3s;
-    cursor: pointer;
-}
-
-.portfolio .galeria .proyecto:hover{
-    transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0,0,0,.5);
-}
-
-.portfolio .galeria .proyecto img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    transition: transform .4s;
-}
-
-.portfolio .galeria .proyecto:hover img{
-    transform: scale(1.05);
-}
-
-.portfolio .galeria .proyecto .proyecto-info{
-    padding: 20px;
-    text-align: center;
-}
-
-.portfolio .galeria .proyecto .proyecto-info h3{
-    font-size: 18px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    color: #1CB698;
-}
-
-.portfolio .galeria .proyecto .proyecto-info p{
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #bbb;
-}
-
-.portfolio .galeria .proyecto .proyecto-info button{
-    cursor: pointer;
-    background-color: transparent;
-    border: 2px solid whitesmoke;
-    padding: 8px 18px;
-    font-size: 14px;
-    color: whitesmoke;
-    transition: background-color .3s, border-color .3s;
-}
-
-.portfolio .galeria .proyecto .proyecto-info button:hover{
-    background-color: #1CB698;
-    border-color: #1CB698;
-}
-
-.portfolio .galeria .proyecto .proyecto-info button a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-.portfolio .galeria .proyecto .proyecto-info .tech-tags{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    margin-bottom: 15px;
-}
-
-.portfolio .galeria .proyecto .proyecto-info .tech-tag{
-    background-color: #1CB698;
-    color: #1e2326;
-    font-size: 11px;
-    font-weight: 600;
-    padding: 3px 8px;
-    border-radius: 3px;
-    letter-spacing: 0.5px;
+    transition: opacity .3s ease;
 }
 
 /*CONTACTO*/
