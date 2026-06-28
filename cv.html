@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Santiago Gonzalez Roisler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 10pt;
+            color: #1e2326;
+            background: #e5e5e5;
+            line-height: 1.5;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 24px rgba(0,0,0,.18);
+        }
+
+        /* ---- HEADER ---- */
+        .cv-header {
+            background: #1e2326;
+            color: #fff;
+            padding: 26px 32px 22px;
+        }
+
+        .cv-header h1 {
+            font-size: 26pt;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            line-height: 1;
+        }
+
+        .cv-header .subtitle {
+            color: #1CB698;
+            font-size: 10.5pt;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+
+        .cv-header .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 24px;
+            row-gap: 4px;
+            margin-top: 14px;
+            font-size: 8.5pt;
+            color: #bbb;
+        }
+
+        .cv-header .contacts span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cv-header .contacts span i {
+            color: #1CB698;
+            font-size: 9pt;
+        }
+
+        /* ---- BODY ---- */
+        .cv-body {
+            display: flex;
+            flex: 1;
+        }
+
+        /* ---- LEFT ---- */
+        .cv-left {
+            width: 36%;
+            background: #f5f5f5;
+            padding: 22px 20px;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        /* ---- RIGHT ---- */
+        .cv-right {
+            width: 64%;
+            padding: 22px 24px;
+        }
+
+        /* ---- SECTION TITLE ---- */
+        h2 {
+            font-size: 8pt;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #1CB698;
+            border-bottom: 1.5px solid #1CB698;
+            padding-bottom: 3px;
+            margin-bottom: 11px;
+            margin-top: 20px;
+        }
+
+        h2:first-child { margin-top: 0; }
+
+        /* ---- PERFIL ---- */
+        .perfil {
+            font-size: 9pt;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* ---- SKILLS ---- */
+        .skill-group { margin-bottom: 10px; }
+
+        .skill-group .group-label {
+            font-size: 7.5pt;
+            font-weight: 600;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .skill-row {
+            font-size: 9pt;
+            color: #333;
+            padding: 2px 0;
+        }
+
+        /* ---- IDIOMAS ---- */
+        .lang-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9pt;
+            padding: 3px 0;
+            color: #333;
+        }
+
+        .lang-row .level { color: #1CB698; font-weight: 500; }
+
+        /* ---- EXPERIENCIA ---- */
+        .exp-item { margin-bottom: 14px; }
+
+        .exp-item h3 {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #1e2326;
+            line-height: 1.2;
+        }
+
+        .exp-item .company {
+            font-size: 9pt;
+            color: #1CB698;
+            font-weight: 500;
+        }
+
+        .exp-item .date {
+            font-size: 8pt;
+            color: #999;
+            margin-bottom: 4px;
+        }
+
+        .exp-item p {
+            font-size: 9pt;
+            color: #444;
+            line-height: 1.55;
+        }
+
+        /* ---- EDUCACIÓN ---- */
+        .edu-item { margin-bottom: 14px; }
+
+        .edu-item h3 {
+            font-size: 10pt;
+            font-weight: 600;
+            color: #1e2326;
+            line-height: 1.3;
+        }
+
+        .edu-item .inst {
+            font-size: 9pt;
+            color: #555;
+        }
+
+        .edu-item .date {
+            font-size: 8pt;
+            color: #999;
+        }
+
+        /* ---- CURSOS ---- */
+        .cursos-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cursos-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 9pt;
+        }
+
+        .cursos-list li:last-child { border-bottom: none; }
+
+        .cursos-list li strong {
+            display: block;
+            font-weight: 500;
+            color: #1e2326;
+            line-height: 1.3;
+        }
+
+        .cursos-list li span {
+            color: #888;
+            font-size: 8pt;
+        }
+
+        /* ---- PRINT BUTTON ---- */
+        .print-btn {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: #1CB698;
+            color: #fff;
+            border: none;
+            padding: 11px 22px;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 6px;
+            letter-spacing: .5px;
+            box-shadow: 0 4px 16px rgba(28,182,152,.4);
+            transition: background .2s;
+        }
+
+        .print-btn:hover { background: #17a589; }
+
+        /* ---- PRINT ---- */
+        @media print {
+            @page { size: A4; margin: 0; }
+
+            body { background: #fff; }
+
+            .page {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .print-btn { display: none; }
+
+            .cv-header,
+            .cv-left {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            h2 {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Descargar PDF</button>
+
+<div class="page">
+
+    <!-- HEADER -->
+    <div class="cv-header">
+        <h1>SANTIAGO GONZALEZ ROISLER</h1>
+        <div class="subtitle">Desarrollador de Software</div>
+        <div class="contacts">
+            <span><i class="fa-solid fa-envelope"></i> santiago.gonzalez.roisler@gmail.com</span>
+            <span><i class="fa-solid fa-location-dot"></i> Buenos Aires, Argentina</span>
+            <span><i class="fa-brands fa-linkedin"></i> linkedin.com/in/santiago-gonzalez-roisler</span>
+            <span><i class="fa-brands fa-github"></i> github.com/gogoroisler</span>
+        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="cv-body">
+
+        <!-- LEFT -->
+        <div class="cv-left">
+
+            <h2>Perfil</h2>
+            <p class="perfil">Estudiante de Tecnicatura en Desarrollo de Software con experiencia en Python, Django y Node.js. Trayectoria en administración contable y docencia. Me interesan los proyectos vinculados a educación y tecnología.</p>
+
+            <h2>Hard Skills</h2>
+
+            <div class="skill-group">
+                <span class="group-label">Principal</span>
+                <div class="skill-row">Python · Django</div>
+                <div class="skill-row">HTML · CSS · JavaScript</div>
+                <div class="skill-row">Node.js · Express</div>
+                <div class="skill-row">SQL (MySQL · SQLite)</div>
+                <div class="skill-row">Git</div>
+                <div class="skill-row">Tailwind CSS</div>
+            </div>
+
+            <div class="skill-group">
+                <span class="group-label">Conocimiento básico</span>
+                <div class="skill-row">TypeScript · Angular · React</div>
+                <div class="skill-row">Java · Testing</div>
+            </div>
+
+            <div class="skill-group">
+                <span class="group-label">Otras herramientas</span>
+                <div class="skill-row">Paquete Office · Adobe</div>
+                <div class="skill-row">Plataformas de gestión contable</div>
+                <div class="skill-row">Metodologías Scrum / Agile</div>
+            </div>
+
+            <h2>Soft Skills</h2>
+            <div class="skill-row">Comunicación</div>
+            <div class="skill-row">Trabajo en equipo</div>
+            <div class="skill-row">Docencia</div>
+            <div class="skill-row">Project Management</div>
+            <div class="skill-row">Liderazgo</div>
+            <div class="skill-row">Aprendizaje autodidacta</div>
+
+            <h2>Idiomas</h2>
+            <div class="lang-row"><span>Español</span><span class="level">Nativo</span></div>
+            <div class="lang-row"><span>Inglés</span><span class="level">B1.2 — MCER</span></div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="cv-right">
+
+            <h2>Experiencia Profesional</h2>
+
+            <div class="exp-item">
+                <h3>Administrativo Contable</h3>
+                <div class="company">Autónomo</div>
+                <div class="date">2018 — Presente · CABA</div>
+                <p>Gestión contable en estudio contable: liquidaciones de expensas, declaraciones juradas impositivas, conciliaciones bancarias, atención a proveedores y elaboración de balances.</p>
+            </div>
+
+            <div class="exp-item">
+                <h3>Ayudante de Cátedra — Introducción a Base de Datos</h3>
+                <div class="company">IFTS Nº 18</div>
+                <div class="date">2023 · CABA</div>
+                <p>Asistencia en el dictado de la materia Introducción a Base de Datos en nivel terciario.</p>
+            </div>
+
+            <div class="exp-item">
+                <h3>Clases Particulares y Pasantía</h3>
+                <div class="company">Cuenta propia</div>
+                <div class="date">2009 – 2018 · CABA</div>
+                <p>Clases particulares de Economía, Historia y Ciencias Sociales para nivel secundario y terciario. Pasantía como preceptor en nivel secundario (2009).</p>
+            </div>
+
+            <div class="exp-item">
+                <h3>Editor y Community Manager</h3>
+                <div class="company">Freelance</div>
+                <div class="date">2016 — 2018 · CABA</div>
+                <p>Edición editorial, corrección de estilo, diseño de dossier y folletos, gestión de redes sociales y comunicación institucional.</p>
+            </div>
+
+            <h2>Educación</h2>
+
+            <div class="edu-item">
+                <h3>Tecnicatura Superior en Desarrollo de Software</h3>
+                <div class="inst">Instituto de Formación Técnica Superior Nº 18</div>
+                <div class="date">2022 — 2026 · En curso · CABA</div>
+            </div>
+
+            <h2>Cursos y Certificaciones</h2>
+
+            <ul class="cursos-list">
+                <li>
+                    <strong>Fullstack Web — JavaScript / Node.js</strong>
+                    <span>Codo a Codo 4.0</span>
+                </li>
+                <li>
+                    <strong>Perfil Web Full Stack Junior</strong>
+                    <span>Argentina Programa 4.0</span>
+                </li>
+                <li>
+                    <strong>Desarrollador Java — Programación y Testing</strong>
+                    <span>UTN / Argentina Programa 4.0</span>
+                </li>
+                <li>
+                    <strong>Gestión de Proyectos, Metodologías Ágiles y Lean</strong>
+                    <span>Fundación Telefónica Movistar</span>
+                </li>
+                <li>
+                    <strong>Introducción a Ciberseguridad</strong>
+                    <span>Fundación Telefónica Movistar</span>
+                </li>
+                <li>
+                    <strong>Ciberseguridad en el Entorno Educativo</strong>
+                    <span>Fundación Telefónica Movistar</span>
+                </li>
+                <li>
+                    <strong>Inglés Técnico B1.2 — MCER</strong>
+                    <span>Centro Universitario de Idiomas</span>
+                </li>
+                <li>
+                    <strong>Asistente Contable</strong>
+                    <span>Capacitarte UBA</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

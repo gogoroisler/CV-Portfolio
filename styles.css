@@ -581,15 +581,25 @@ html{
 
 .filtros{
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 30px;
 }
 
+.filtro-label{
+    font-size: 12px;
+    font-family: 'Work Sans';
+    color: #888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 4px;
+}
+
 .filtro{
-    background: transparent;
-    border: 2px solid #3a4146;
+    background: rgba(255,255,255,0.05);
+    border: 1.5px solid rgba(255,255,255,0.2);
     color: whitesmoke;
     padding: 8px 22px;
     cursor: pointer;
@@ -603,6 +613,7 @@ html{
 .filtro:hover{
     border-color: #1CB698;
     color: #1CB698;
+    background: rgba(28,182,152,0.08);
 }
 
 .filtro.active{
