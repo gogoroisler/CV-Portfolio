@@ -494,11 +494,10 @@
             <h2>Contacto</h2>
             <p class="contact-intro">¿Tenés un proyecto en mente? ¿Querés ponerte en contacto? Escribime y te respondo a la brevedad.</p>
             <div class="col">
-                <form action="https://formsubmit.co/santiago.gonzalez.roisler@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_next" value="https://gogoroisler.github.io/CV-Portfolio/">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6a7f15ef-46fa-4e45-9b74-c1b8f42a2503">
+                <input type="hidden" name="redirect" value="https://gogoroisler.github.io/CV-Portfolio/">
+                <input type="checkbox" name="botcheck" style="display:none">
                 <input type="text" id="name" name="name" placeholder="Nombre" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
                 <input type="text" id="subject" name="subject" placeholder="Tema" required>
